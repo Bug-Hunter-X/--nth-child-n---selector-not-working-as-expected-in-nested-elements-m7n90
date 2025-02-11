@@ -1,0 +1,17 @@
+/* bugSolution.css */
+.container {
+  display: flex;
+}
+
+.container > div > ul > li:nth-child(2) {
+  background-color: yellow;
+}
+
+/*This solution specifically targets the second list item within a nested ul element that is a direct child of a div, which is a direct child of a container element.*/
+.container > div > ul > li:nth-child(even) {
+  background-color: lightblue; /*Style all even list items*/
+}
+.container > div > ul > li:nth-child(odd) {
+  background-color: lightgreen;/*Style all odd list items*/
+}
+/*Other selectors could be combined as needed to make styles even more specific*/
